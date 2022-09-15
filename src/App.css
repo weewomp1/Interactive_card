@@ -201,7 +201,7 @@ input {
   align-items: center;
 }
 
-@media (min-width: 724px) {
+@media (min-width: 800px) {
   .container {
     flex-direction: row;
     height: 100vh;
@@ -216,20 +216,20 @@ input {
 
   .cards{
     left: 3rem;
-    top: 25rem;
+    top: 42vh;
   }
   .bgBack {
-    transform: translateY(100%) translateX(20%);
+    transform: translateY(80%) translateX(20%);
     left: 5rem;
     font-size: 8px;
-    height: 110px;
-    width: 200px;
+    height: 120px;
+    width: 210px;
   }
   .bgFront {
-    transform: translateY(-160%);
+    transform: translateY(-140%);
     font-size: 8px;
-    height: 110px;
-    width: 200px;
+    height: 120px;
+    width: 210px;
     gap: 1em;
   }
   .bgFront img {
@@ -243,17 +243,17 @@ input {
 
 @media(min-width: 915px) {
   .bgBack {
-    transform: translateY(100%) translateX(20%);
+    transform: translateY(80%) translateX(20%);
     left: 5rem;
     /* font-size: 1em; */
-    height: 110px;
-    width: 200px;
+    height: 140px;
+    width: 240px;
   }
   .bgFront {
-    transform: translateY(-160%);
+    transform: translateY(-140%);
     /* font-size: 1em; */
-    height: 110px;
-    width: 200px;
+    height: 140px;
+    width: 240px;
   }
   .bgFront img {
     transform-origin:left;
@@ -264,7 +264,36 @@ input {
     margin-top: 0vh;
     font-size: larger;
   }
+  #showDate {
+    margin-top: 1vh;
+  }
+  #showName {
+    margin-top: 1vh;
+  }
 }
+
+@media(min-width: 1050px) {
+  .bgBack { 
+    transform: translateY(50%) translateX(20%);
+    height: 220px;
+    width: 320px;
+  }
+  .bgFront {
+    transform: translateY(-160%);
+    height: 220px;
+    width: 320px;
+  }
+  .cvcnumber {
+    margin-bottom: 5em;
+  }
+  #showName {
+    margin-top: 5vh;
+  }
+  #showDate {
+    margin-top: 5vh;
+  }
+}
+
 @media (min-width: 1280px) {
   .bgBack {
     transform: translateY(50%) translateX(20%);
@@ -286,12 +315,19 @@ input {
     margin-bottom: 5px;
   }
   .cvcnumber {
+    margin-top: 8vh;
     color: white;
     font-size: 1em;
     padding-right: 4em;
   }
   form {
     font-size: x-large;
+  }
+  #showName {
+    margin-top: 0em;
+  }
+  #showDate {
+    margin-top: 0em;
   }
 } 
 .errorWarning {
