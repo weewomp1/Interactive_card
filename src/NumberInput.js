@@ -7,7 +7,6 @@ const NumberInput = ({value, maxLength}) => {
       updateCards('Number');
 
       if (value.length > maxLength) {
-        console.log('too long')
         value = value.slice(0, maxLength)
       }
     }} required/>

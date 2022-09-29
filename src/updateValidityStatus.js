@@ -2,7 +2,6 @@ import isValid from './isValid.js'
 
 function updateValidityStatus() {
   const numberInput = document.querySelector('#numberInput')
-  console.log('function called')
   if (isValid(numberInput.value)) {
     numberInput.classList.remove('error')
     document.querySelector('.errorWarning').setAttribute('style', 'color: green; font-weight: 500;');

@@ -18,8 +18,6 @@ const InputForm = ({onSubmit}) => {
     
   }
 
-  // cardNumber = 0913 9123 1942 2124
-  // cardNumber = 0913 9123 1942 2124
   
 
   return (
